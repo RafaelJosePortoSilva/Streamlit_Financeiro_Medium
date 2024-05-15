@@ -4,13 +4,8 @@ import streamlit as st
 import yfinance as yf
 
 def main():
-    st.title('Dashboard Financeiro')
-    symbol = 'PETR4.SA'
-    data = yf.download(symbol, start="2022-01-01", end="2022-12-31")
-    st.line_chart(data)
-
-    st.header(f'Tabela de Preços - {symbol}')
-    st.write(data)
+    
+    
 
 
 if __name__ == '__main__':
